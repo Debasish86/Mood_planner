@@ -1,0 +1,144 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #f6f9ff, #eef1f7);
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #666;
+}
+
+/* Sections */
+section {
+    background: #ffffff;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Mood Section */
+.mood-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mood-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.mood-card {
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+}
+
+/* Individual Mood Colors */
+.mood-card[data-mood="Happy"] {
+    background: #ffeaa7;
+}
+
+.mood-card[data-mood="Stressed"] {
+    background: #fab1a0;
+}
+
+.mood-card[data-mood="Energetic"] {
+    background: #81ecec;
+}
+
+.mood-card[data-mood="Lazy"] {
+    background: #dfe6e9;
+}
+
+/* Hover Effect */
+.mood-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Task Section */
+.task-section ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.task-section li {
+    background: #f1f3f6;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Quote Section */
+.quote-section p {
+    margin-top: 15px;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+}
+
+/* History Section */
+.history-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.history-section th,
+.history-section td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.history-section th {
+    background: #f4f6fa;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mood-cards {
+        justify-content: center;
+    }
+
+    .mood-card {
+        width: 140px;
+    }
+}

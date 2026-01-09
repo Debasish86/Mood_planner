@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mood-Based Daily Planner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🌈 Mood-Based Daily Planner</h1>
+        <p>Select your mood and plan your day</p>
+    </header>
+
+    <!-- Mood Selection -->
+    <section class="mood-section">
+        <h2>How are you feeling today?</h2>
+
+        <div class="mood-cards">
+            <div class="mood-card" data-mood="Happy">😊 Happy</div>
+            <div class="mood-card" data-mood="Stressed">😫 Stressed</div>
+            <div class="mood-card" data-mood="Energetic">⚡ Energetic</div>
+            <div class="mood-card" data-mood="Lazy">😴 Lazy</div>
+        </div>
+    </section>
+
+    <!-- Tasks Section -->
+    <section class="task-section">
+        <h2>Suggested Tasks</h2>
+        <ul id="taskList">
+            <li>Select a mood to see tasks</li>
+        </ul>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <h2>Motivational Quote</h2>
+        <p id="quoteText">Your quote will appear here ✨</p>
+    </section>
+
+    <!-- Mood History -->
+    <section class="history-section">
+        <h2>Your Mood History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Mood</th>
+                </tr>
+            </thead>
+            <tbody id="historyTable">
+                <tr>
+                    <td>--</td>
+                    <td>--</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with ❤️ from Debasish Nayak</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
